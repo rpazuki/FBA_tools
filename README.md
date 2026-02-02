@@ -1,6 +1,11 @@
-﻿# FBA Tools
 
+# FBA Tools
+---
 This repository contains Jupyter notebooks that use Flux Balance Analysis (FBA) to study metabolic networks. The notebooks focus on model exploration, simulation, and pathway visualization to support research and learning.
+
+(Roozbeh H. Pazuki, 2026)
+
+---
 
 ## Installation
 
@@ -39,7 +44,7 @@ Create and activate a virtual environment, update `pip`, then install dependenci
 	```
 	jupyter notebook
 	```
-
+---
 ## Examples
 
 - Escher pathway visualization: [Examples/FBA_on_LAB_Escher_pathways.ipynb](Examples/FBA_on_LAB_Escher_pathways.ipynb)
