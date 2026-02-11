@@ -45,6 +45,22 @@ Create and activate a virtual environment, update `pip`, then install dependenci
 	jupyter notebook
 	```
 ---
+
+
+## Next time update
+
+
+For the next time update, after you activate your Python environment, first downliad the latest version of the project by running
+```
+git pull
+```
+and next, the following command for the latest version of the library
+```
+pip install --upgrade --force-reinstall git+https://github.com/rpazuki/lab_utils.git#subdirectory=src
+```
+
+---
+
 ## Examples
 
 - Escher pathway visualization: [Examples/FBA_on_LAB_Escher_pathways.ipynb](Examples/FBA_on_LAB_Escher_pathways.ipynb)

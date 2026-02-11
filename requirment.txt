@@ -4,3 +4,4 @@ pandas
 cobra
 escher
 jupyter
+git+https://github.com/rpazuki/lab_utils#subdirectory=src
