@@ -32,18 +32,31 @@ Create and activate a virtual environment, update `pip`, then install dependenci
 
 1. Create and activate the environment:
 	```
-	python3 -m venv .venv
-	source .venv/bin/activate
+	conda create --name escher_1 
+	conda activate escher_1
+	conda install -n escher_1 -c conda-forge nodejs=14.20.1
 	```
 2. Update `pip` and install requirements:
 	```
 	python -m pip install --upgrade pip
 	python -m pip install -r requirment.txt
+	jupyter lab clean --all
+	jupyter labextension install @jupyter-widgets/jupyterlab-manager
+    jupyter labextension install escher@1.7.3
+	jupyter lab build --dev-build=False --minimize=False
 	```
 3. Start Jupyter:
 	```
-	jupyter notebook
+	jupyter lab
 	```
+
+4. In case the Escher error, try this
+```
+conda run -n escher_1 python -m pip install --force-reinstall "escher==1.7.3"
+conda run -n escher_1 python -m pip install --force-reinstall "markupsafe==2.0.1" "jinja2==2.11.3"
+conda run -n escher_1 jupyter lab clean --all
+conda run -n escher_1 jupyter lab build --dev-build=False --minimize=False
+```
 ---
 
 

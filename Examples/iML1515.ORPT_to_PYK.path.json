@@ -1,0 +1,445 @@
+[
+  {
+    "map_name": "iML1515.path.ORPT_to_PYK",
+    "map_id": "iML1515_path_ORPT_to_PYK",
+    "map_description": "Auto-generated Escher path map from ORPT to PYK",
+    "homepage": "https://escher.github.io",
+    "schema": "https://escher.github.io/escher/jsonschema/1-0-0#"
+  },
+  {
+    "reactions": {
+      "1": {
+        "name": "Orotate phosphoribosyltransferase",
+        "bigg_id": "ORPT",
+        "reversibility": true,
+        "label_x": 420,
+        "label_y": 170,
+        "gene_reaction_rule": "b3642",
+        "genes": [
+          {
+            "bigg_id": "b3642",
+            "name": "pyrE"
+          }
+        ],
+        "metabolites": [
+          {
+            "bigg_id": "orot5p_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "orot_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "ppi_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "prpp_c",
+            "coefficient": 1.0
+          }
+        ],
+        "segments": {
+          "1": {
+            "from_node_id": "1",
+            "to_node_id": "2",
+            "b1": null,
+            "b2": null
+          },
+          "2": {
+            "from_node_id": "2",
+            "to_node_id": "3",
+            "b1": null,
+            "b2": null
+          },
+          "3": {
+            "from_node_id": "4",
+            "to_node_id": "1",
+            "b1": null,
+            "b2": null
+          },
+          "4": {
+            "from_node_id": "5",
+            "to_node_id": "1",
+            "b1": null,
+            "b2": null
+          },
+          "5": {
+            "from_node_id": "3",
+            "to_node_id": "6",
+            "b1": null,
+            "b2": null
+          },
+          "6": {
+            "from_node_id": "3",
+            "to_node_id": "7",
+            "b1": null,
+            "b2": null
+          }
+        }
+      },
+      "2": {
+        "name": "Acyl-[acyl-carrier-protein] synthetase  (n-C16:0)",
+        "bigg_id": "AACPS3",
+        "reversibility": false,
+        "label_x": 420,
+        "label_y": 390,
+        "gene_reaction_rule": "b1094 and b2836",
+        "genes": [
+          {
+            "bigg_id": "b1094",
+            "name": "acpP"
+          },
+          {
+            "bigg_id": "b2836",
+            "name": "aas"
+          }
+        ],
+        "metabolites": [
+          {
+            "bigg_id": "ACP_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "amp_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "atp_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "hdca_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "palmACP_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "ppi_c",
+            "coefficient": 1.0
+          }
+        ],
+        "segments": {
+          "7": {
+            "from_node_id": "8",
+            "to_node_id": "9",
+            "b1": null,
+            "b2": null
+          },
+          "8": {
+            "from_node_id": "9",
+            "to_node_id": "10",
+            "b1": null,
+            "b2": null
+          },
+          "9": {
+            "from_node_id": "11",
+            "to_node_id": "8",
+            "b1": null,
+            "b2": null
+          },
+          "10": {
+            "from_node_id": "12",
+            "to_node_id": "8",
+            "b1": null,
+            "b2": null
+          },
+          "11": {
+            "from_node_id": "13",
+            "to_node_id": "8",
+            "b1": null,
+            "b2": null
+          },
+          "12": {
+            "from_node_id": "10",
+            "to_node_id": "14",
+            "b1": null,
+            "b2": null
+          },
+          "13": {
+            "from_node_id": "10",
+            "to_node_id": "15",
+            "b1": null,
+            "b2": null
+          },
+          "14": {
+            "from_node_id": "10",
+            "to_node_id": "5",
+            "b1": null,
+            "b2": null
+          }
+        }
+      },
+      "3": {
+        "name": "Pyruvate kinase",
+        "bigg_id": "PYK",
+        "reversibility": false,
+        "label_x": 420,
+        "label_y": 610,
+        "gene_reaction_rule": "b1854 or b1676",
+        "genes": [
+          {
+            "bigg_id": "b1854",
+            "name": "pykA"
+          },
+          {
+            "bigg_id": "b1676",
+            "name": "pykF"
+          }
+        ],
+        "metabolites": [
+          {
+            "bigg_id": "adp_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "atp_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "h_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "pep_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "pyr_c",
+            "coefficient": 1.0
+          }
+        ],
+        "segments": {
+          "15": {
+            "from_node_id": "16",
+            "to_node_id": "17",
+            "b1": null,
+            "b2": null
+          },
+          "16": {
+            "from_node_id": "17",
+            "to_node_id": "18",
+            "b1": null,
+            "b2": null
+          },
+          "17": {
+            "from_node_id": "19",
+            "to_node_id": "16",
+            "b1": null,
+            "b2": null
+          },
+          "18": {
+            "from_node_id": "20",
+            "to_node_id": "16",
+            "b1": null,
+            "b2": null
+          },
+          "19": {
+            "from_node_id": "21",
+            "to_node_id": "16",
+            "b1": null,
+            "b2": null
+          },
+          "20": {
+            "from_node_id": "18",
+            "to_node_id": "12",
+            "b1": null,
+            "b2": null
+          },
+          "21": {
+            "from_node_id": "18",
+            "to_node_id": "22",
+            "b1": null,
+            "b2": null
+          }
+        }
+      }
+    },
+    "nodes": {
+      "1": {
+        "node_type": "multimarker",
+        "x": 320,
+        "y": 200
+      },
+      "2": {
+        "node_type": "midmarker",
+        "x": 420,
+        "y": 200
+      },
+      "3": {
+        "node_type": "multimarker",
+        "x": 520,
+        "y": 200
+      },
+      "4": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 140,
+        "bigg_id": "orot5p_c",
+        "name": "Orotidine 5'-phosphate",
+        "label_x": 200,
+        "label_y": 160,
+        "node_is_primary": true
+      },
+      "5": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 180,
+        "bigg_id": "ppi_c",
+        "name": "Diphosphate",
+        "label_x": 200,
+        "label_y": 200,
+        "node_is_primary": false
+      },
+      "6": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 140,
+        "bigg_id": "orot_c",
+        "name": "Orotate C5H3N2O4",
+        "label_x": 680,
+        "label_y": 160,
+        "node_is_primary": false
+      },
+      "7": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 180,
+        "bigg_id": "prpp_c",
+        "name": "5-Phospho-alpha-D-ribose 1-diphosphate",
+        "label_x": 680,
+        "label_y": 200,
+        "node_is_primary": false
+      },
+      "8": {
+        "node_type": "multimarker",
+        "x": 320,
+        "y": 420
+      },
+      "9": {
+        "node_type": "midmarker",
+        "x": 420,
+        "y": 420
+      },
+      "10": {
+        "node_type": "multimarker",
+        "x": 520,
+        "y": 420
+      },
+      "11": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 360,
+        "bigg_id": "ACP_c",
+        "name": "Acyl carrier protein",
+        "label_x": 200,
+        "label_y": 380,
+        "node_is_primary": true
+      },
+      "12": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 400,
+        "bigg_id": "atp_c",
+        "name": "ATP C10H12N5O13P3",
+        "label_x": 200,
+        "label_y": 420,
+        "node_is_primary": false
+      },
+      "13": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 440,
+        "bigg_id": "hdca_c",
+        "name": "Hexadecanoate (n-C16:0)",
+        "label_x": 200,
+        "label_y": 460,
+        "node_is_primary": false
+      },
+      "14": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 360,
+        "bigg_id": "amp_c",
+        "name": "AMP C10H12N5O7P",
+        "label_x": 680,
+        "label_y": 380,
+        "node_is_primary": false
+      },
+      "15": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 400,
+        "bigg_id": "palmACP_c",
+        "name": "Palmitoyl-ACP (n-C16:0ACP)",
+        "label_x": 680,
+        "label_y": 420,
+        "node_is_primary": false
+      },
+      "16": {
+        "node_type": "multimarker",
+        "x": 320,
+        "y": 640
+      },
+      "17": {
+        "node_type": "midmarker",
+        "x": 420,
+        "y": 640
+      },
+      "18": {
+        "node_type": "multimarker",
+        "x": 520,
+        "y": 640
+      },
+      "19": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 580,
+        "bigg_id": "adp_c",
+        "name": "ADP C10H12N5O10P2",
+        "label_x": 200,
+        "label_y": 600,
+        "node_is_primary": true
+      },
+      "20": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 620,
+        "bigg_id": "h_c",
+        "name": "H+",
+        "label_x": 200,
+        "label_y": 640,
+        "node_is_primary": false
+      },
+      "21": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 660,
+        "bigg_id": "pep_c",
+        "name": "Phosphoenolpyruvate",
+        "label_x": 200,
+        "label_y": 680,
+        "node_is_primary": false
+      },
+      "22": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 620,
+        "bigg_id": "pyr_c",
+        "name": "Pyruvate",
+        "label_x": 680,
+        "label_y": 640,
+        "node_is_primary": false
+      }
+    },
+    "text_labels": {},
+    "canvas": {
+      "x": 0,
+      "y": 0,
+      "width": 900,
+      "height": 920
+    }
+  }
+]

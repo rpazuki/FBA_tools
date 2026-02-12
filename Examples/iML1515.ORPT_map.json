@@ -1,0 +1,147 @@
+[
+  {
+    "map_name": "iML1515.ORPT.depth0.products_only",
+    "map_id": "iML1515_ORPT_d0_products_only",
+    "map_description": "Auto-generated Escher map for ORPT with search_depth=0 and expansion_mode=products_only",
+    "homepage": "https://escher.github.io",
+    "schema": "https://escher.github.io/escher/jsonschema/1-0-0#"
+  },
+  {
+    "reactions": {
+      "1": {
+        "name": "Orotate phosphoribosyltransferase",
+        "bigg_id": "ORPT",
+        "reversibility": true,
+        "label_x": 420,
+        "label_y": 170,
+        "gene_reaction_rule": "b3642",
+        "genes": [
+          {
+            "bigg_id": "b3642",
+            "name": "pyrE"
+          }
+        ],
+        "metabolites": [
+          {
+            "bigg_id": "orot5p_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "orot_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "ppi_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "prpp_c",
+            "coefficient": 1.0
+          }
+        ],
+        "segments": {
+          "1": {
+            "from_node_id": "1",
+            "to_node_id": "2",
+            "b1": null,
+            "b2": null
+          },
+          "2": {
+            "from_node_id": "2",
+            "to_node_id": "3",
+            "b1": null,
+            "b2": null
+          },
+          "3": {
+            "from_node_id": "4",
+            "to_node_id": "1",
+            "b1": null,
+            "b2": null
+          },
+          "4": {
+            "from_node_id": "5",
+            "to_node_id": "1",
+            "b1": null,
+            "b2": null
+          },
+          "5": {
+            "from_node_id": "3",
+            "to_node_id": "6",
+            "b1": null,
+            "b2": null
+          },
+          "6": {
+            "from_node_id": "3",
+            "to_node_id": "7",
+            "b1": null,
+            "b2": null
+          }
+        }
+      }
+    },
+    "nodes": {
+      "1": {
+        "node_type": "multimarker",
+        "x": 320,
+        "y": 200
+      },
+      "2": {
+        "node_type": "midmarker",
+        "x": 420,
+        "y": 200
+      },
+      "3": {
+        "node_type": "multimarker",
+        "x": 520,
+        "y": 200
+      },
+      "4": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 140,
+        "bigg_id": "orot5p_c",
+        "name": "Orotidine 5'-phosphate",
+        "label_x": 200,
+        "label_y": 160,
+        "node_is_primary": true
+      },
+      "5": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 180,
+        "bigg_id": "ppi_c",
+        "name": "Diphosphate",
+        "label_x": 200,
+        "label_y": 200,
+        "node_is_primary": false
+      },
+      "6": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 140,
+        "bigg_id": "orot_c",
+        "name": "Orotate C5H3N2O4",
+        "label_x": 680,
+        "label_y": 160,
+        "node_is_primary": false
+      },
+      "7": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 180,
+        "bigg_id": "prpp_c",
+        "name": "5-Phospho-alpha-D-ribose 1-diphosphate",
+        "label_x": 680,
+        "label_y": 200,
+        "node_is_primary": false
+      }
+    },
+    "text_labels": {},
+    "canvas": {
+      "x": 0,
+      "y": 0,
+      "width": 900,
+      "height": 600
+    }
+  }
+]

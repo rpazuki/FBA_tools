@@ -1,0 +1,185 @@
+[
+    {
+        "map_name": "iJO1366.Fatty acid beta-oxidation",
+        "map_id": "974cac1fabddaf6e7d140e7431239870",
+        "map_description": "\nLast Modified Thu Feb 12 2026 17:50:16 GMT+0000 (Greenwich Mean Time)",
+        "homepage": "https://escher.github.io",
+        "schema": "https://escher.github.io/escher/jsonschema/1-0-0#"
+    },
+    {
+        "reactions": {
+            "2076263": {
+                "name": "Orotate phosphoribosyltransferase",
+                "bigg_id": "ORPT",
+                "reversibility": true,
+                "label_x": 440.29156494140625,
+                "label_y": 4871.333984375,
+                "gene_reaction_rule": "b3642",
+                "genes": [
+                    {
+                        "name": "pyrE",
+                        "annotation": {
+                            "asap": "ABE-0011904",
+                            "ecogene": "EG10808",
+                            "ncbigene": "948157",
+                            "ncbigi": "16131513",
+                            "refseq_locus_tag": "b3642",
+                            "refseq_name": "pyrE",
+                            "refseq_synonym": [
+                                "ECK3632",
+                                "JW3617"
+                            ],
+                            "sbo": "SBO:0000243",
+                            "uniprot": "P0A7E3"
+                        },
+                        "bigg_id": "b3642"
+                    }
+                ],
+                "metabolites": [
+                    {
+                        "bigg_id": "orot5p_c",
+                        "coefficient": -1
+                    },
+                    {
+                        "bigg_id": "orot_c",
+                        "coefficient": 1
+                    },
+                    {
+                        "bigg_id": "ppi_c",
+                        "coefficient": -1
+                    },
+                    {
+                        "bigg_id": "prpp_c",
+                        "coefficient": 1
+                    }
+                ],
+                "segments": {
+                    "2625": {
+                        "from_node_id": "2078057",
+                        "to_node_id": "2078058",
+                        "b1": null,
+                        "b2": null
+                    },
+                    "2626": {
+                        "from_node_id": "2078059",
+                        "to_node_id": "2078058",
+                        "b1": null,
+                        "b2": null
+                    },
+                    "2627": {
+                        "from_node_id": "2078057",
+                        "to_node_id": "2078056",
+                        "b1": {
+                            "x": 425.29156494140625,
+                            "y": 4799.333984375
+                        },
+                        "b2": {
+                            "x": 425.29156494140625,
+                            "y": 4745.083984375
+                        }
+                    },
+                    "2628": {
+                        "from_node_id": "2078059",
+                        "to_node_id": "2078060",
+                        "b1": {
+                            "x": 425.29156494140625,
+                            "y": 4923.333984375
+                        },
+                        "b2": {
+                            "x": 425.29156494140625,
+                            "y": 4977.583984375
+                        }
+                    },
+                    "2629": {
+                        "from_node_id": "2078057",
+                        "to_node_id": "2078061",
+                        "b1": {
+                            "x": 425.29156494140625,
+                            "y": 4795.333984375
+                        },
+                        "b2": {
+                            "x": 407.29156494140625,
+                            "y": 4790.083984375
+                        }
+                    },
+                    "2630": {
+                        "from_node_id": "2078059",
+                        "to_node_id": "2078062",
+                        "b1": {
+                            "x": 425.29156494140625,
+                            "y": 4927.333984375
+                        },
+                        "b2": {
+                            "x": 407.29156494140625,
+                            "y": 4932.583984375
+                        }
+                    }
+                }
+            }
+        },
+        "nodes": {
+            "2078056": {
+                "node_type": "metabolite",
+                "x": 425.29156494140625,
+                "y": 4686.333984375,
+                "bigg_id": "orot5p_c",
+                "name": "Orotidine 5'-phosphate",
+                "label_x": 450.29156494140625,
+                "label_y": 4686.333984375,
+                "node_is_primary": true
+            },
+            "2078057": {
+                "node_type": "multimarker",
+                "x": 425.29156494140625,
+                "y": 4841.333984375
+            },
+            "2078058": {
+                "node_type": "midmarker",
+                "x": 425.29156494140625,
+                "y": 4861.333984375
+            },
+            "2078059": {
+                "node_type": "multimarker",
+                "x": 425.29156494140625,
+                "y": 4881.333984375
+            },
+            "2078060": {
+                "node_type": "metabolite",
+                "x": 425.29156494140625,
+                "y": 5036.333984375,
+                "bigg_id": "orot_c",
+                "name": "Orotate C5H3N2O4",
+                "label_x": 450.29156494140625,
+                "label_y": 5036.333984375,
+                "node_is_primary": true
+            },
+            "2078061": {
+                "node_type": "metabolite",
+                "x": 345.29156494140625,
+                "y": 4756.333984375,
+                "bigg_id": "ppi_c",
+                "name": "Diphosphate",
+                "label_x": 300.29156494140625,
+                "label_y": 4786.333984375,
+                "node_is_primary": false
+            },
+            "2078062": {
+                "node_type": "metabolite",
+                "x": 345.29156494140625,
+                "y": 4966.333984375,
+                "bigg_id": "prpp_c",
+                "name": "5-Phospho-alpha-D-ribose 1-diphosphate",
+                "label_x": 291.29156494140625,
+                "label_y": 4996.333984375,
+                "node_is_primary": false
+            }
+        },
+        "text_labels": {},
+        "canvas": {
+            "x": -887.5064892326659,
+            "y": 3923.422671795898,
+            "width": 5231.0836585764155,
+            "height": 2919.640617985351
+        }
+    }
+]
