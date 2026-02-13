@@ -1,0 +1,777 @@
+[
+  {
+    "map_name": "iML1515.compare.diff_above.wt0.pert0",
+    "map_id": "iML1515_compare_diff_above_wt0_pert0",
+    "map_description": "Flux comparison map (diff_above) between WT index 0 and pert index 0",
+    "homepage": "https://escher.github.io",
+    "schema": "https://escher.github.io/escher/jsonschema/1-0-0#"
+  },
+  {
+    "reactions": {
+      "1": {
+        "name": "ATP synthase (four protons for one ATP) (periplasm)",
+        "bigg_id": "ATPS4rpp",
+        "reversibility": true,
+        "label_x": 420,
+        "label_y": 170,
+        "gene_reaction_rule": "(b3739 and (b3731 and b3733 and b3735 and b3734 and b3732) and (b3738 and b3736 and b3737)) or ((b3731 and b3733 and b3735 and b3734 and b3732) and (b3738 and b3736 and b3737))",
+        "genes": [
+          {
+            "bigg_id": "b3738",
+            "name": "atpB"
+          },
+          {
+            "bigg_id": "b3735",
+            "name": "atpH"
+          },
+          {
+            "bigg_id": "b3736",
+            "name": "atpF"
+          },
+          {
+            "bigg_id": "b3737",
+            "name": "atpE"
+          },
+          {
+            "bigg_id": "b3733",
+            "name": "atpG"
+          },
+          {
+            "bigg_id": "b3732",
+            "name": "atpD"
+          },
+          {
+            "bigg_id": "b3734",
+            "name": "atpA"
+          },
+          {
+            "bigg_id": "b3739",
+            "name": "atpI"
+          },
+          {
+            "bigg_id": "b3731",
+            "name": "atpC"
+          }
+        ],
+        "metabolites": [
+          {
+            "bigg_id": "adp_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "atp_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "h2o_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "h_c",
+            "coefficient": 3.0
+          },
+          {
+            "bigg_id": "h_p",
+            "coefficient": -4.0
+          },
+          {
+            "bigg_id": "pi_c",
+            "coefficient": -1.0
+          }
+        ],
+        "segments": {
+          "1": {
+            "from_node_id": "1",
+            "to_node_id": "2",
+            "b1": null,
+            "b2": null
+          },
+          "2": {
+            "from_node_id": "2",
+            "to_node_id": "3",
+            "b1": null,
+            "b2": null
+          },
+          "3": {
+            "from_node_id": "4",
+            "to_node_id": "1",
+            "b1": null,
+            "b2": null
+          },
+          "4": {
+            "from_node_id": "5",
+            "to_node_id": "1",
+            "b1": null,
+            "b2": null
+          },
+          "5": {
+            "from_node_id": "6",
+            "to_node_id": "1",
+            "b1": null,
+            "b2": null
+          },
+          "6": {
+            "from_node_id": "3",
+            "to_node_id": "7",
+            "b1": null,
+            "b2": null
+          },
+          "7": {
+            "from_node_id": "3",
+            "to_node_id": "8",
+            "b1": null,
+            "b2": null
+          },
+          "8": {
+            "from_node_id": "3",
+            "to_node_id": "9",
+            "b1": null,
+            "b2": null
+          }
+        }
+      },
+      "2": {
+        "name": "Cytochrome oxidase bo3 (ubiquinol-8: 4 protons) (periplasm)",
+        "bigg_id": "CYTBO3_4pp",
+        "reversibility": false,
+        "label_x": 420,
+        "label_y": 390,
+        "gene_reaction_rule": "b0432 and b0431 and b0429 and b0430",
+        "genes": [
+          {
+            "bigg_id": "b0432",
+            "name": "cyoA"
+          },
+          {
+            "bigg_id": "b0429",
+            "name": "cyoD"
+          },
+          {
+            "bigg_id": "b0430",
+            "name": "cyoC"
+          },
+          {
+            "bigg_id": "b0431",
+            "name": "cyoB"
+          }
+        ],
+        "metabolites": [
+          {
+            "bigg_id": "h2o_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "h_c",
+            "coefficient": -4.0
+          },
+          {
+            "bigg_id": "h_p",
+            "coefficient": 4.0
+          },
+          {
+            "bigg_id": "o2_c",
+            "coefficient": -0.5
+          },
+          {
+            "bigg_id": "q8_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "q8h2_c",
+            "coefficient": -1.0
+          }
+        ],
+        "segments": {
+          "9": {
+            "from_node_id": "10",
+            "to_node_id": "11",
+            "b1": null,
+            "b2": null
+          },
+          "10": {
+            "from_node_id": "11",
+            "to_node_id": "12",
+            "b1": null,
+            "b2": null
+          },
+          "11": {
+            "from_node_id": "9",
+            "to_node_id": "10",
+            "b1": null,
+            "b2": null
+          },
+          "12": {
+            "from_node_id": "13",
+            "to_node_id": "10",
+            "b1": null,
+            "b2": null
+          },
+          "13": {
+            "from_node_id": "14",
+            "to_node_id": "10",
+            "b1": null,
+            "b2": null
+          },
+          "14": {
+            "from_node_id": "12",
+            "to_node_id": "8",
+            "b1": null,
+            "b2": null
+          },
+          "15": {
+            "from_node_id": "12",
+            "to_node_id": "5",
+            "b1": null,
+            "b2": null
+          },
+          "16": {
+            "from_node_id": "12",
+            "to_node_id": "15",
+            "b1": null,
+            "b2": null
+          }
+        }
+      },
+      "3": {
+        "name": "H2O exchange",
+        "bigg_id": "EX_h2o_e",
+        "reversibility": true,
+        "label_x": 420,
+        "label_y": 610,
+        "gene_reaction_rule": "",
+        "genes": [],
+        "metabolites": [
+          {
+            "bigg_id": "h2o_e",
+            "coefficient": -1.0
+          }
+        ],
+        "segments": {
+          "17": {
+            "from_node_id": "16",
+            "to_node_id": "17",
+            "b1": null,
+            "b2": null
+          },
+          "18": {
+            "from_node_id": "17",
+            "to_node_id": "18",
+            "b1": null,
+            "b2": null
+          },
+          "19": {
+            "from_node_id": "19",
+            "to_node_id": "16",
+            "b1": null,
+            "b2": null
+          }
+        }
+      },
+      "4": {
+        "name": "H2O transport via diffusion (extracellular to periplasm)",
+        "bigg_id": "H2Otex",
+        "reversibility": true,
+        "label_x": 420,
+        "label_y": 830,
+        "gene_reaction_rule": "b3875 or s0001 or b1319 or b0957 or b2215 or b0241 or b1377 or b0929",
+        "genes": [
+          {
+            "bigg_id": "b3875",
+            "name": "ompL"
+          },
+          {
+            "bigg_id": "b1377",
+            "name": "ompN"
+          },
+          {
+            "bigg_id": "b1319",
+            "name": "ompG"
+          },
+          {
+            "bigg_id": "b0241",
+            "name": "phoE"
+          },
+          {
+            "bigg_id": "b2215",
+            "name": "ompC"
+          },
+          {
+            "bigg_id": "b0957",
+            "name": "ompA"
+          },
+          {
+            "bigg_id": "b0929",
+            "name": "ompF"
+          },
+          {
+            "bigg_id": "s0001",
+            "name": "s0001"
+          }
+        ],
+        "metabolites": [
+          {
+            "bigg_id": "h2o_e",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "h2o_p",
+            "coefficient": 1.0
+          }
+        ],
+        "segments": {
+          "20": {
+            "from_node_id": "20",
+            "to_node_id": "21",
+            "b1": null,
+            "b2": null
+          },
+          "21": {
+            "from_node_id": "21",
+            "to_node_id": "22",
+            "b1": null,
+            "b2": null
+          },
+          "22": {
+            "from_node_id": "19",
+            "to_node_id": "20",
+            "b1": null,
+            "b2": null
+          },
+          "23": {
+            "from_node_id": "22",
+            "to_node_id": "23",
+            "b1": null,
+            "b2": null
+          }
+        }
+      },
+      "5": {
+        "name": "H2O transport via diffusion (periplasm)",
+        "bigg_id": "H2Otpp",
+        "reversibility": true,
+        "label_x": 420,
+        "label_y": 1050,
+        "gene_reaction_rule": "s0001 or b0875",
+        "genes": [
+          {
+            "bigg_id": "b0875",
+            "name": "aqpZ"
+          },
+          {
+            "bigg_id": "s0001",
+            "name": "s0001"
+          }
+        ],
+        "metabolites": [
+          {
+            "bigg_id": "h2o_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "h2o_p",
+            "coefficient": -1.0
+          }
+        ],
+        "segments": {
+          "24": {
+            "from_node_id": "24",
+            "to_node_id": "25",
+            "b1": null,
+            "b2": null
+          },
+          "25": {
+            "from_node_id": "25",
+            "to_node_id": "26",
+            "b1": null,
+            "b2": null
+          },
+          "26": {
+            "from_node_id": "23",
+            "to_node_id": "24",
+            "b1": null,
+            "b2": null
+          },
+          "27": {
+            "from_node_id": "26",
+            "to_node_id": "8",
+            "b1": null,
+            "b2": null
+          }
+        }
+      },
+      "6": {
+        "name": "NADH dehydrogenase (ubiquinone-8 & 3 protons) (periplasm)",
+        "bigg_id": "NADH16pp",
+        "reversibility": false,
+        "label_x": 420,
+        "label_y": 1270,
+        "gene_reaction_rule": "b2279 and b2277 and b2284 and b2282 and b2278 and b2288 and b2276 and b2287 and b2283 and b2281 and b2286 and b2280 and b2285",
+        "genes": [
+          {
+            "bigg_id": "b2279",
+            "name": "nuoK"
+          },
+          {
+            "bigg_id": "b2282",
+            "name": "nuoH"
+          },
+          {
+            "bigg_id": "b2280",
+            "name": "nuoJ"
+          },
+          {
+            "bigg_id": "b2278",
+            "name": "nuoL"
+          },
+          {
+            "bigg_id": "b2286",
+            "name": "nuoC"
+          },
+          {
+            "bigg_id": "b2281",
+            "name": "nuoI"
+          },
+          {
+            "bigg_id": "b2277",
+            "name": "nuoM"
+          },
+          {
+            "bigg_id": "b2288",
+            "name": "nuoA"
+          },
+          {
+            "bigg_id": "b2276",
+            "name": "nuoN"
+          },
+          {
+            "bigg_id": "b2283",
+            "name": "nuoG"
+          },
+          {
+            "bigg_id": "b2284",
+            "name": "nuoF"
+          },
+          {
+            "bigg_id": "b2287",
+            "name": "nuoB"
+          },
+          {
+            "bigg_id": "b2285",
+            "name": "nuoE"
+          }
+        ],
+        "metabolites": [
+          {
+            "bigg_id": "h_c",
+            "coefficient": -4.0
+          },
+          {
+            "bigg_id": "h_p",
+            "coefficient": 3.0
+          },
+          {
+            "bigg_id": "nad_c",
+            "coefficient": 1.0
+          },
+          {
+            "bigg_id": "nadh_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "q8_c",
+            "coefficient": -1.0
+          },
+          {
+            "bigg_id": "q8h2_c",
+            "coefficient": 1.0
+          }
+        ],
+        "segments": {
+          "28": {
+            "from_node_id": "27",
+            "to_node_id": "28",
+            "b1": null,
+            "b2": null
+          },
+          "29": {
+            "from_node_id": "28",
+            "to_node_id": "29",
+            "b1": null,
+            "b2": null
+          },
+          "30": {
+            "from_node_id": "9",
+            "to_node_id": "27",
+            "b1": null,
+            "b2": null
+          },
+          "31": {
+            "from_node_id": "30",
+            "to_node_id": "27",
+            "b1": null,
+            "b2": null
+          },
+          "32": {
+            "from_node_id": "15",
+            "to_node_id": "27",
+            "b1": null,
+            "b2": null
+          },
+          "33": {
+            "from_node_id": "29",
+            "to_node_id": "5",
+            "b1": null,
+            "b2": null
+          },
+          "34": {
+            "from_node_id": "29",
+            "to_node_id": "31",
+            "b1": null,
+            "b2": null
+          },
+          "35": {
+            "from_node_id": "29",
+            "to_node_id": "14",
+            "b1": null,
+            "b2": null
+          }
+        }
+      }
+    },
+    "nodes": {
+      "1": {
+        "node_type": "multimarker",
+        "x": 320,
+        "y": 200
+      },
+      "2": {
+        "node_type": "midmarker",
+        "x": 420,
+        "y": 200
+      },
+      "3": {
+        "node_type": "multimarker",
+        "x": 520,
+        "y": 200
+      },
+      "4": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 140,
+        "bigg_id": "adp_c",
+        "name": "ADP C10H12N5O10P2",
+        "label_x": 200,
+        "label_y": 160,
+        "node_is_primary": true
+      },
+      "5": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 180,
+        "bigg_id": "h_p",
+        "name": "H+",
+        "label_x": 200,
+        "label_y": 200,
+        "node_is_primary": false
+      },
+      "6": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 220,
+        "bigg_id": "pi_c",
+        "name": "Phosphate",
+        "label_x": 200,
+        "label_y": 240,
+        "node_is_primary": false
+      },
+      "7": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 140,
+        "bigg_id": "atp_c",
+        "name": "ATP C10H12N5O13P3",
+        "label_x": 680,
+        "label_y": 160,
+        "node_is_primary": false
+      },
+      "8": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 180,
+        "bigg_id": "h2o_c",
+        "name": "H2O H2O",
+        "label_x": 680,
+        "label_y": 200,
+        "node_is_primary": true
+      },
+      "9": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 220,
+        "bigg_id": "h_c",
+        "name": "H+",
+        "label_x": 680,
+        "label_y": 240,
+        "node_is_primary": true
+      },
+      "10": {
+        "node_type": "multimarker",
+        "x": 320,
+        "y": 420
+      },
+      "11": {
+        "node_type": "midmarker",
+        "x": 420,
+        "y": 420
+      },
+      "12": {
+        "node_type": "multimarker",
+        "x": 520,
+        "y": 420
+      },
+      "13": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 400,
+        "bigg_id": "o2_c",
+        "name": "O2 O2",
+        "label_x": 200,
+        "label_y": 420,
+        "node_is_primary": false
+      },
+      "14": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 440,
+        "bigg_id": "q8h2_c",
+        "name": "Ubiquinol-8",
+        "label_x": 200,
+        "label_y": 460,
+        "node_is_primary": false
+      },
+      "15": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 440,
+        "bigg_id": "q8_c",
+        "name": "Ubiquinone-8",
+        "label_x": 680,
+        "label_y": 460,
+        "node_is_primary": false
+      },
+      "16": {
+        "node_type": "multimarker",
+        "x": 320,
+        "y": 640
+      },
+      "17": {
+        "node_type": "midmarker",
+        "x": 420,
+        "y": 640
+      },
+      "18": {
+        "node_type": "multimarker",
+        "x": 520,
+        "y": 640
+      },
+      "19": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 580,
+        "bigg_id": "h2o_e",
+        "name": "H2O H2O",
+        "label_x": 200,
+        "label_y": 600,
+        "node_is_primary": true
+      },
+      "20": {
+        "node_type": "multimarker",
+        "x": 320,
+        "y": 860
+      },
+      "21": {
+        "node_type": "midmarker",
+        "x": 420,
+        "y": 860
+      },
+      "22": {
+        "node_type": "multimarker",
+        "x": 520,
+        "y": 860
+      },
+      "23": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 800,
+        "bigg_id": "h2o_p",
+        "name": "H2O H2O",
+        "label_x": 680,
+        "label_y": 820,
+        "node_is_primary": true
+      },
+      "24": {
+        "node_type": "multimarker",
+        "x": 320,
+        "y": 1080
+      },
+      "25": {
+        "node_type": "midmarker",
+        "x": 420,
+        "y": 1080
+      },
+      "26": {
+        "node_type": "multimarker",
+        "x": 520,
+        "y": 1080
+      },
+      "27": {
+        "node_type": "multimarker",
+        "x": 320,
+        "y": 1300
+      },
+      "28": {
+        "node_type": "midmarker",
+        "x": 420,
+        "y": 1300
+      },
+      "29": {
+        "node_type": "multimarker",
+        "x": 520,
+        "y": 1300
+      },
+      "30": {
+        "node_type": "metabolite",
+        "x": 180,
+        "y": 1280,
+        "bigg_id": "nadh_c",
+        "name": "Nicotinamide adenine dinucleotide - reduced",
+        "label_x": 200,
+        "label_y": 1300,
+        "node_is_primary": false
+      },
+      "31": {
+        "node_type": "metabolite",
+        "x": 660,
+        "y": 1280,
+        "bigg_id": "nad_c",
+        "name": "Nicotinamide adenine dinucleotide",
+        "label_x": 680,
+        "label_y": 1300,
+        "node_is_primary": false
+      }
+    },
+    "text_labels": {
+      "comparision_label": {
+        "x": 30,
+        "y": 50,
+        "text": "Mode: diff_above threshold: 6"
+      }
+    },
+    "canvas": {
+      "x": 0,
+      "y": 0,
+      "width": 900,
+      "height": 1580
+    }
+  }
+]

@@ -110,6 +110,61 @@ builder_orot5p_to_pyr
 
 ---
 
+## 5) Build around one gene
+
+Provide either `gene_id` or `gene_name` (if both are provided, `gene_id` wins).
+
+```python
+builder_gene = build_gene_escher_builder(
+    gene_id="b0150",
+    # gene_name="pyrE",
+    df_fluxes=df_fluxes,
+    df_shadow_prices=df_shadow_prices,
+    model=model,
+    solution_index=solution_index,
+    search_depth=1,
+    expansion_mode="both",  # both | reactants_only | products_only
+    nonzero_only=True,
+    flux_threshold=1e-9,
+    keep_seed_reactions=True,
+    hide_secondary_metabolites=False,
+    map_json_path="H:/ROBOT_SCIENTIST/E_coli/iML1515.gene.b0150.depth1.both.json",
+    verbose=True,
+)
+builder_gene
+```
+
+---
+
+## 6) Compare WT vs perturbed fluxes
+
+Select one of these comparison modes:
+- `wt_nonzero_pert_zero`
+- `pert_nonzero_wt_zero`
+- `diff_above`
+
+```python
+builder_cmp = build_flux_comparison_escher_builder(
+    model=model,
+    df_fluxes_wt=df_fluxes_wt,
+    df_shadow_prices_wt=df_shadow_prices_wt,
+    wt_index=0,
+    df_fluxes_pert=df_fluxes_pert,
+    df_shadow_prices_pert=df_shadow_prices_pert,
+    pert_index=0,
+    comparison_mode="diff_above",
+    flux_threshold=1e-9,
+    diff_threshold=1e-6,
+    shadow_mode="diff",  # wt | pert | diff
+    hide_secondary_metabolites=False,
+    map_json_path="H:/ROBOT_SCIENTIST/E_coli/iML1515.compare.diff_above.json",
+    verbose=True,
+)
+builder_cmp
+```
+
+---
+
 ## Common quick tweaks
 
 - Show all metabolites: `hide_secondary_metabolites=False`

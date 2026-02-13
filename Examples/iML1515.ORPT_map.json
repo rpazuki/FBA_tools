@@ -136,7 +136,13 @@
         "node_is_primary": false
       }
     },
-    "text_labels": {},
+    "text_labels": {
+      "reaction_label": {
+        "x": 30,
+        "y": 50,
+        "text": "Reaction: ORPT"
+      }
+    },
     "canvas": {
       "x": 0,
       "y": 0,
